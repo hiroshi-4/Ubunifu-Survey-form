@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="ubunifu-form-styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Ubunifu Learning Hub Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve our services</p>
+    <!-- Add fieldsets -->
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name" >Name <input id="name" type="text" placeholder="Enter your name" required/></label>
+        <label id="email-label" for="email" >Email <input id="email" type="email" placeholder="Enter your email " required/></label>
+        <label id="number-label" for="number" >Age(optional) <input id="number" type="number" min="18" max="40" placeholder="Age" /></label>
+      </fieldset>
+      <fieldset>
+        <label>Which course did you study at Ubunifu Learning Hub
+          <select id="dropdown">
+            <option>Select the course</option>
+            <option>Basic packages</option>
+            <option>Graphic design</option>
+            <option>Web design</option>
+            <option>Programming</option>
+            <option>3D design</option>
+          </select>
+          
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Could you recommend Ubunifu Learning Hub to a friend?
+          <label ><input type="radio" value="definately" name="response" class="inline"  />Definately</label>
+          <label ><input type="radio" name="response" class="inline" value="maybe"/>Maybe</label>
+          <label ><input type="radio" name="response" class="inline" value="not-sure"/>Not sure</label>
+        </legend>        
+      </fieldset>
+      <fieldset>
+        <legend> What would you like improved?
+          <label><input type="checkbox" Value="Reception" class="inline" />Reception</label>
+          <label><input type="checkbox" Value="Syllabus" class="inline"/>Syllabus</label>
+          <label><input type="checkbox" Value="Mode" class="inline"/>Mode of teaching</label>
+        </legend>
+        <label>Any comment or suggestion
+        <textarea></textarea>
+      </label>
+      </fieldset>
+      <fieldset>
+        <input type="submit" id="submit" />
+
+      </fieldset>
+    </form>
+  </body>
+
+</html>
